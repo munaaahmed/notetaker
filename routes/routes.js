@@ -8,7 +8,7 @@ module.exports = app => {
 
         if (err) throw err;
 
-        var notes = JSON.parse(data);
+        const notes = JSON.parse(data);
 
         // API ROUTES
         // ========================================================
