@@ -1,11 +1,11 @@
 // Require Dependencies
-var express = require("express");
-var fs = require("fs");
-var path = require('path');
+const express = require("express");
+const fs = require("fs");
+const path = require('path');
 
 // Initialize express app
-var app = express();
-var PORT = process.env.PORT || 3000;
+const app = express();
+const PORT = process.env.PORT || 3000;
 
 // Setup data parsing
 app.use(express.urlencoded({ extended: true }));
@@ -18,4 +18,4 @@ require('./routes/routes')(app);
 // Setup listener
 app.listen(PORT, function() {
     console.log("App listening on PORT: " + PORT);
-});  
+});
